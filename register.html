@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Blue Travel Registration</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="register-page">
+
+<header class="site-header">
+
+<div class="nav-left">
+
+<img src="logo.png" class="logo">
+
+<nav>
+<a href="index.html">Home</a>
+<a href="fare.html">Fare Matrix</a>
+<a href="schedule.html">Schedule</a>
+<a href="help.html">Help</a>
+</nav>
+
+</div>
+
+<div class="nav-right">
+
+<a href="register.html" class="create-btn-nav">Create Account</a>
+
+</div>
+
+</header>
+
+
+<div class="main-container">
+
+<div class="card">
+
+
+<div class="left-panel">
+
+<div class="profile-circle" id="imgPreview"></div>
+
+<div class="upload-stack">
+
+<div class="file-bar" onclick="openFile()">
+
+<span class="choose">Choose File</span>
+<span id="fileName">No File Chosen</span>
+
+</div>
+
+<input type="file" id="fileInput" hidden accept="image/*">
+
+<button class="upload-btn">Upload Photo</button>
+
+</div>
+
+</div>
+
+
+
+<div class="right-panel">
+
+<h1>Registration</h1>
+
+<form id="regForm">
+
+<label>First Name</label>
+<input type="text" required placeholder="John">
+
+<label>Last Name</label>
+<input type="text" required placeholder="Doe">
+
+<div class="row">
+
+<div class="age">
+<label>Age</label>
+<input type="number" id="age" placeholder="18" required>
+</div>
+
+<div class="contact">
+<label>Contact Number</label>
+<input type="text" placeholder="09123456789" required>
+</div>
+
+</div>
+
+<label>Email Address</label>
+<input type="email" placeholder="john@email.com" required>
+
+<label>Password</label>
+<input type="password" required>
+
+<div class="check">
+
+<input type="checkbox" id="agree" required>
+
+<label>
+I agree with the
+<a href="#">Terms of Use</a>
+</label>
+
+</div>
+
+<button class="create-btn">Create Account</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+<footer class="site-footer">
+
+Sean Lee | Deion Decierto | 9 Emerald
+
+</footer>
+
+</body>
+</html>

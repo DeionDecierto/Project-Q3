@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Blue Travel</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+
+<svg width="40" height="40" viewBox="0 0 100 100">
+<circle cx="50" cy="50" r="45" fill="#2d6cdf"/>
+<ellipse cx="50" cy="50" rx="30" ry="15" stroke="white" stroke-width="3" fill="none"/>
+<ellipse cx="50" cy="50" rx="15" ry="30" stroke="white" stroke-width="3" fill="none"/>
+</svg>
+
+<span class="brand">Blue Travel</span>
+
+</div>
+
+<div>
+<a href="index.html">Home</a>
+<a href="fare.html">Fare Matrix</a>
+<a href="schedule.html">Schedule</a>
+<a href="register.html">Help</a>
+<a class="btn" href="register.html">Create Account</a>
+</div>
+
+</nav>
+
+<div class="container">
+
+
+
+<div class="boxlogo">
+
+<svg width="80" height="80" viewBox="0 0 100 100">
+<circle cx="50" cy="50" r="45" fill="#2d6cdf"/>
+<ellipse cx="50" cy="50" rx="30" ry="15" stroke="white" stroke-width="3" fill="none"/>
+<ellipse cx="50" cy="50" rx="15" ry="30" stroke="white" stroke-width="3" fill="none"/>
+</svg>
+
+</div>
+
+<h1>Fare Matrix</h1>
+
+<br>
+
+<label>Pick-up Station</label>
+
+<br>
+
+<select id="pickup" onchange="updateMap()">
+
+<option value="0">Roosevelt</option>
+<option value="1">Balintawak</option>
+<option value="2">Monumento</option>
+<option value="3">5th Avenue</option>
+<option value="4">R. Papa</option>
+<option value="5">Abad Santos</option>
+<option value="6">Blumentritt</option>
+<option value="7">Tayuman</option>
+<option value="8">Bambang</option>
+<option value="9">Doroteo Jose</option>
+<option value="10">Carriedo</option>
+<option value="11">Central Terminal</option>
+<option value="12">United Nations</option>
+<option value="13">Pedro Gil</option>
+<option value="14">Quirino</option>
+<option value="15">Vito Cruz</option>
+<option value="16">Gil Puyat</option>
+<option value="17">Libertad</option>
+<option value="18">EDSA</option>
+<option value="19">Baclaran</option>
+
+</select>
+
+<br><br>
+
+<label>Drop-off Station</label>
+
+<br>
+
+<select id="dropoff" onchange="updateMap()">
+
+<option value="0">Roosevelt</option>
+<option value="1">Balintawak</option>
+<option value="2">Monumento</option>
+<option value="3">5th Avenue</option>
+<option value="4">R. Papa</option>
+<option value="5">Abad Santos</option>
+<option value="6">Blumentritt</option>
+<option value="7">Tayuman</option>
+<option value="8">Bambang</option>
+<option value="9">Doroteo Jose</option>
+<option value="10">Carriedo</option>
+<option value="11">Central Terminal</option>
+<option value="12">United Nations</option>
+<option value="13">Pedro Gil</option>
+<option value="14">Quirino</option>
+<option value="15">Vito Cruz</option>
+<option value="16">Gil Puyat</option>
+<option value="17">Libertad</option>
+<option value="18">EDSA</option>
+<option value="19">Baclaran</option>
+
+</select>
+
+<br><br>
+
+<button onclick="regularFare()">Regular Fare</button>
+
+<button onclick="discountFare()">Discount Fare</button>
+
+<div class="farebox">
+Fare: <span id="fare">₱0.00</span>
+</div>
+
+<h2>LRT Line 1 Route</h2>
+
+<div class="map">
+
+<div class="station">R</div>
+<div class="station">B</div>
+<div class="station">M</div>
+<div class="station">5</div>
+<div class="station">RP</div>
+<div class="station">AS</div>
+<div class="station">BL</div>
+<div class="station">T</div>
+<div class="station">BA</div>
+<div class="station">DJ</div>
+<div class="station">C</div>
+<div class="station">CT</div>
+<div class="station">UN</div>
+<div class="station">PG</div>
+<div class="station">Q</div>
+<div class="station">VC</div>
+<div class="station">GP</div>
+<div class="station">L</div>
+<div class="station">ED</div>
+<div class="station">BC</div>
+
+</div>
+
+</div>
+
+<footer>
+Sean Lee | Deion Decierto | 9 Emerald
+</footer>
+
+</body>
+</html>
